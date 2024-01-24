@@ -4,12 +4,13 @@
 
 
 
-body, html {
+main, body, html {
     padding: 0;
     margin: 0;
     font-size: 16px;
     font-family: Roboto;
     background-color: #131313;
+    overflow-x:hidden;
 }
 
 
@@ -17,6 +18,7 @@ body, html {
     background-color: #1c1c1c;
     text-align: center;
     height: 100px;
+    width: 100vw;
 }
 
 .container h1 {
@@ -127,5 +129,41 @@ footer {
     background-color: #1c1c1c;
     text-align: center;
     padding: 1rem;
-    color: #bbbbbb;
+    color: #bbbbbb
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+       
+    }
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .experience {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .wisdom-container {
+        flex-direction: column;
+    }
+
+    .wisdom {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    footer {
+        
+    }
 }
